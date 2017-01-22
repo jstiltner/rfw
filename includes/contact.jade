@@ -1,0 +1,36 @@
+//- contact.jade
+section#features
+        .container
+          .section-heading.scrollpoint.sp-effect3
+            h1 Contact Us
+            .divider
+            p For more info and help, contact us!
+          .row
+            .col-md-12
+              .row
+                .col-md-8.col-sm-8.scrollpoint.sp-effect1
+                  form(action='send-form-email.php', method='POST', role='form')
+                    .form-group
+                      input#name.form-control(type='text', name='user_name', placeholder='Your name')
+                    .form-group
+                      input#mail.form-control(type='email', placeholder='Your email', name='user_email')
+                    .form-group
+                      textarea#msg.form-control(cols='30', rows='10', name='user_message', placeholder='Your message')
+                    input.btn.btn-primary.btn-lg(type='submit', value='Submit')
+                .col-md-4.col-sm-4.contact-details.scrollpoint.sp-effect2
+                  .media
+                    a.pull-left(href='#')
+                      i.fa.fa-map-marker.fa-2x
+                    .media-body
+                      h4.media-heading 2159 N Thompson Lane, Suite A4, Murfreesboro, TN 37129
+                  .media
+                    a.pull-left(href='#')
+                      i.fa.fa-envelope.fa-2x
+                    .media-body
+                      h4.media-heading
+                        a(href='mailto:info@robertsonfamilywater.com') info@robertsonfamilywater.com
+                  .media
+                    a.pull-left(href='#')
+                      i.fa.fa-phone.fa-2x
+                    .media-body
+                      h4.media-heading 615 895 6600

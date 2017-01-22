@@ -1,0 +1,61 @@
+//- index.jade
+doctype html
+
+html.no-js(lang='en')
+
+  include ./includes/head.jade
+  body
+    .pre-loader
+      .load-con
+        img.animated.fadeInDown(src='assets/img/rfw/logo.png', alt='')
+        .spinner
+          .bounce1
+          .bounce2
+          .bounce3
+    header
+      include ./includes/splashnav.jade
+      img(src="assets/img/rfw/rfw-bkgd-stripe.jpg")
+      .wrapper
+      section#features
+        .container
+          .section-heading.scrollpoint.sp-effect3
+            h1 Come work with our family!
+            .divider
+            p We're growing.
+          .row
+            .col-md-6.col-sm-6.col-xs-12
+              p Disrupt tumblr squid chia. Ethical celiac keytar health goth, hashtag crucifix irony roof party schlitz vegan 3 wolf moon yr fashion axe. Affogato sustainable swag stumptown street art. Echo park tofu typewriter XOXO literally mumblecore selfies fap ugh. Jean shorts +1 brooklyn biodiesel, seitan man bun umami street art farm-to-table small batch. Gentrify bespoke gastropub, art party truffaut fixie health goth mlkshk franzen meh +1 flannel ennui locavore. +1 actually fingerstache, PBR&B quinoa chia keytar blue bottle intelligentsia cronut polaroid lomo leggings.
+            .col-md-6.col-sm-6.col-xs-12
+              p Locavore bicycle rights hoodie kickstarter, asymmetrical photo booth literally VHS kombucha keffiyeh slow-carb. Helvetica pinterest blog, meditation poutine truffaut seitan before they sold out. Slow-carb chartreuse heirloom chia migas man braid. Keytar quinoa synth, tilde organic drinking vinegar meggings. Tacos intelligentsia brunch, echo park kale chips offal chambray. Tacos fashion axe distillery godard. 3 wolf moon swag meh YOLO, etsy asymmetrical skateboard 90's cliche cornhole cardigan blue bottle dreamcatcher chillwave occupy.
+
+      include ./includes/contact.jade
+      include ./includes/footer.jade
+
+script(src='assets/js/jquery-1.11.1.min.js')
+    script(src='assets/js/bootstrap.min.js')
+    script(src='assets/js/slick.min.js')
+    script(src='assets/js/placeholdem.min.js')
+    script(src='assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js')
+    script(src='assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js')
+    script(src='assets/js/waypoints.min.js')
+    script(src='assets/js/scripts.js')
+    script.
+      $(document).ready(function() {
+      appMaster.preLoader();
+      });
+    // ScheduleOnce widget code begins here
+    script(src='assets/js/scheduleonce.js')
+    script(src='assets/js/scheduleonce1.js')
+
+    //
+      Below is the Google Universal Analytics tracking code for this site.
+      To get all the benefits of Universal Analytics for this property, copy and paste this code into every webpage you want to track.
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-82637054-1', 'auto');
+      ga('send', 'pageview');
+    // Ends Google Analytics Tracking code
+

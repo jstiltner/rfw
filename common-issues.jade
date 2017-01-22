@@ -1,0 +1,93 @@
+//- index.jade
+doctype html
+
+html.no-js(lang='en')
+
+  include ./includes/head.jade
+  body
+    .pre-loader
+      .load-con
+        img.animated.fadeInDown(src='assets/img/rfw/logo.png', alt='')
+        .spinner
+          .bounce1
+          .bounce2
+          .bounce3
+    header
+      include ./includes/splashnav.jade
+      img(src="assets/img/rfw/rfw-bkgd-stripe.jpg")
+      .wrapper
+      section#screens
+        .container
+          .section-heading.scrollpoint.sp-effect3
+            h1 Common Water Issues
+            .divider
+            p The problems we solve everyday
+      section#features
+          .row.oddrow
+            .col-md-3.col-sm-3.col-xs-12.problem-icon-odd
+              img(src="assets/img/rfw/icons/HardWater.png" height="128px" width="128px")
+            .col-md-9.col-sm-9.col-xs-12
+              h2 Hard Water
+              p The most common problem found in water may be hardness.  It is generally associated with an abundance of limestone, calcium and/or magnesium dissolved in the water. Hard water causes deposits that form on pipes and other plumbing fixtures, and is the cause of those unsightly water spots on your shower door and sink.  When using hard water, more soap or detergent is needed to get things like your hands, hair and laundry clean.  Water treatment will rid your home of hard water.
+      section#screens
+          .row.evenrow
+            .col-md-9.col-sm-9.col-xs-12
+              h2 Iron Staining
+              p Water that is red, orange, yellow, brown, or cloudy can signal iron, rust, or other contaminants in your water.  Water treatment can address iron staining issues.
+            .col-md-3.col-sm-3.col-xs-12.problem-icon-even
+              img(src="assets/img/rfw/icons/IronStaining.png" height="128px" width="128px")
+      section#features
+          .row.oddrow
+            .col-md-3.col-sm-3.col-xs-12.problem-icon-odd
+              //- i.fa.fa-tint.fa-4x
+              img(src="assets/img/rfw/icons/Sulphur.png" height="128px" width="128px")
+            .col-md-9.col-sm-9.col-xs-12
+              h2 Suphur (Rotten Egg)
+              p You would know it if you had this problem! In some parts of the country, drinking water can contain the chemical hydrogen sulfide gas, which will fill your home with a "rotten egg" smell.  Water treatment is the only solution to address sulfur.
+      section#screens
+          .row.evenrow
+            .col-md-9.col-sm-9.col-xs-12
+              h2 Taste and Odors
+              p Does the smell of your water give you flashbacks to summer days spent by the pool?  If so, it’s likely that that you have high levels of chlorine in your drinking water.  Water treatment is the only way to ensure chemicals are removed from your water.
+            .col-md-3.col-sm-3.col-xs-12.problem-icon-even
+              img(src="assets/img/rfw/icons/TastesOdors.png" height="128px" width="128px")
+      //- section#features
+      //-     .row.oddrow
+      //-       .col-md-3.col-sm-3.col-xs-12.problem-icon-odd
+      //-         i.fa.fa-tint.fa-4x
+      //-         //- img(src="assets/img/rfw/icons/")
+      //-       .col-md-9.col-sm-9.col-xs-12
+      //-         h2 Problem Title
+      //-         p Locavore bicycle rights hoodie kickstarter, asymmetrical photo booth literally VHS kombucha keffiyeh slow-carb. Helvetica pinterest blog, meditation poutine truffaut seitan before they sold out. Slow-carb chartreuse heirloom chia migas man braid. Keytar quinoa synth, tilde organic drinking vinegar meggings.
+      include ./includes/gettested.jade
+      include ./includes/contact.jade
+      include ./includes/footer.jade
+
+script(src='assets/js/jquery-1.11.1.min.js')
+    script(src='assets/js/bootstrap.min.js')
+    script(src='assets/js/slick.min.js')
+    script(src='assets/js/placeholdem.min.js')
+    script(src='assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js')
+    script(src='assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js')
+    script(src='assets/js/waypoints.min.js')
+    script(src='assets/js/scripts.js')
+    script.
+      $(document).ready(function() {
+      appMaster.preLoader();
+      });
+    // ScheduleOnce widget code begins here
+    script(src='assets/js/scheduleonce.js')
+    script(src='assets/js/scheduleonce1.js')
+
+    //
+      Below is the Google Universal Analytics tracking code for this site.
+      To get all the benefits of Universal Analytics for this property, copy and paste this code into every webpage you want to track.
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-82637054-1', 'auto');
+      ga('send', 'pageview');
+    // Ends Google Analytics Tracking code
+

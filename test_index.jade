@@ -1,0 +1,162 @@
+//- index.jade
+doctype html
+//if lt IE 7
+  html.no-js.ie6(lang='en')
+//if IE 7
+  html.no-js.ie7(lang='en')
+//if IE 8
+  html.no-js.ie8(lang='en')
+// [if gt IE 8] <!
+html.no-js(lang='en')
+  // <![endif]
+  include ./includes/head.jade
+  body
+    .pre-loader
+      .load-con
+        img.animated.fadeInDown(src='assets/img/rfw/logo.png', alt='')
+        .spinner
+          .bounce1
+          .bounce2
+          .bounce3
+    header
+      include ./includes/nav.jade
+
+      .tp-banner-container
+        .tp-banner
+          ul
+            li(data-transition='fade', data-slotamount='7', data-masterspeed='1500')
+              img(src='assets/img/rfw/rfw-bkgd.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='left top', data-bgrepeat='no-repeat')
+              .tp-caption.lfl.fadeout.hidden-xs(data-x='left', data-y='bottom', data-hoffset='30', data-voffset='0', data-speed='500', data-start='700', data-easing='Power4.easeOut')
+              .tp-caption.lfl.fadeout.visible-xs(data-x='left', data-y='center', data-hoffset='700', data-voffset='0', data-speed='500', data-start='700', data-easing='Power4.easeOut')
+              .tp-caption.large_white_bold.sft(data-x='550', data-y='center', data-hoffset='0', data-voffset='-80', data-speed='500', data-start='1200', data-easing='Power4.easeOut')
+                | What's
+              .tp-caption.large_white_light.sfr(data-x='770', data-y='center', data-hoffset='0', data-voffset='-80', data-speed='500', data-start='1400', data-easing='Power4.easeOut')
+                | In
+              .tp-caption.large_white_light.sfb(data-x='550', data-y='center', data-hoffset='0', data-voffset='0', data-speed='1000', data-start='1500', data-easing='Power4.easeOut')
+                | Your Water?
+              .tp-caption.sfb.hidden-xs(data-x='550', data-y='center', data-hoffset='0', data-voffset='85', data-speed='1000', data-start='1700', data-easing='Power4.easeOut')
+                a.btn.btn-primary.inverse.btn-lg(href='#yourwater') LEARN MORE
+              .tp-caption.sfr.hidden-xs(data-x='730', data-y='center', data-hoffset='0', data-voffset='85', data-speed='1500', data-start='1900', data-easing='Power4.easeOut')
+                a.btn.btn-default.btn-lg(href='http://meetme.so/JustinLarson') FREE WATER TEST
+    .wrapper
+      section#whoweare
+        .container
+          .section-heading.scrollpoint.sp-effect3
+            h1 Who We Are
+            .divider
+            p We're Family
+          .row
+            .col-md-4.col-sm-4.col-xs-12
+              .about-item.scrollpoint.sp-effect2
+                .centered.color1
+                  i.fa.fa-home.fa-4x
+                  h3 Family
+                p.justified
+                  | "To be successful, you have to have your heart in your business, and your business in your heart." ~ Thomas Watson, Sr. At Robertson Family Water, we love what we do, and we get the privilege of working with the ones we love while we do it.  We are a three-generation company that strives to provide our customers with the best-possible product and service in the industry.  So please, let our family take care of your family!
+            .col-md-4.col-sm-4.col-xs-12
+              .about-item.scrollpoint.sp-effect5
+                .centered.color2
+                  i.fa.fa-tint.fa-4x
+                  h3 Experts
+                p.justified
+                  | With over 42 years in the water treatment business, we have seen it all! We are uniquely qualified to handle any and all of your water treatment needs. From treating well and residential water, to commercial systems, we've got you covered--plus we have the "Water Guru" Mark Robertson!
+            .col-md-4.col-sm-4.col-xs-12
+              .about-item.scrollpoint.sp-effect1
+                .centered.color1
+                  i.fa.fa-map-marker.fa-4x
+                  h3 Local
+                p.justified
+                  | Robertson Family Water is a local business that is independently owned and operated in Middle Tennessee.  Why does this matter?  Our roots are here.  We've grown up here.  Our children have grown up here.  Our grandchildren are growing up here.  Over the years, we have all had the opportunity to create amazing relationships with our customers, and that is because our service is more personal.
+      section#yourwater
+        .container
+          .section-heading.scrollpoint.sp-effect3
+            h1 What's in your water
+            .divider
+            p And ways we can help...
+          .row
+            .col-md-4.col-sm-4.scrollpoint.sp-effect1
+              .media.text-right.feature
+                a.pull-right(href='/common-issues.html')
+                  i.fa.fa-users.fa-2x
+                .media-body
+                  h3.media-heading Common Water Issues
+                  |                                 Your family deserves the best water at each faucet
+              .media.text-right.feature
+                a.pull-right(href='/products.html')
+                  i.fa.fa-tint.fa-2x
+                .media-body
+                  h3.media-heading Your Home
+                  |                                 In the Kitchen, In the Bathroom, Plumbing and Appliances
+              .media.text-right.feature
+                a.pull-right(href='#')
+                  i.fa.fa-building.fa-2x
+                .media-body
+                  h3.media-heading Your Business
+                  |                                 High Flow Rates, Efficient and Cost-effective
+            .col-md-4.col-sm-4
+              img.img-responsive.scrollpoint.sp-effect5(src='assets/img/rfw/bathroomsink.jpg', alt='')
+            .col-md-4.col-sm-4.scrollpoint.sp-effect2
+              .media.feature
+                a.pull-left(href='/products.html')
+                  i.fa.fa-tint.fa-2x
+                .media-body
+                  h3.media-heading Your Water Solution
+                  |                                 Hard Water, Taste and Odor, Chemicals
+              .media.feature
+                a.pull-left(href='/benefits.html')
+                  i.fa.fa-leaf.fa-2x
+                .media-body
+                  h3.media-heading Your Benefits
+                  |                                 Soap and Cleaners, Appliances, Energy
+              .media.active.feature
+                a.pull-left(href='./#contact')
+                  i.fa.fa-plus.fa-2x
+                .media-body
+                  h3.media-heading And much more!
+      include ./includes/reviews.jade
+      section#getApp
+        .container-fluid
+          .section-heading.inverse.scrollpoint.sp-effect3
+            h1 Get Tested
+            .divider
+            p Let's find a good time to test your water!
+          .row
+            .col-md-12
+              .hanging-phone.scrollpoint.sp-effect2.hidden-xs
+              .platforms
+                a.btn.btn-primary.inverse.scrollpoint.sp-effect1(href='http://meetme.so/JustinLarson')
+                  i.fa.fa-tint.fa-2x
+                  span Free Water
+                  br
+                  b Test
+      include ./includes/contact.jade
+
+    include ./includes/footer.jade
+    #alertModal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+      .modal-dialog.modal-sm
+          .modal-content
+            .modal-body
+              h2.text-center Thanks!
+              p.text-center We have added your email address to our newsletter
+              button.btn.btn-primary.btn-lg.center-block(data-dismiss='modal', aria-hidden='true') OK
+                i.ion-android-close
+    script(src='assets/js/jquery-1.11.1.min.js')
+    script(src='assets/js/bootstrap.min.js')
+    script(src='assets/js/slick.min.js')
+    script(src='assets/js/placeholdem.min.js')
+    script(src='assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js')
+    script(src='assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js')
+    script(src='assets/js/waypoints.min.js')
+    script(src='assets/js/scripts.js')
+    script(src='assets/js/scheduleonce.js')
+    script(src='assets/js/scheduleonce1.js')
+    script(src='assets/js/insert.js')
+    script(src='assets/js/analytics.js')
+    script.
+      $(document).ready(function() {
+      appMaster.preLoader();
+      });
+
+
+
+

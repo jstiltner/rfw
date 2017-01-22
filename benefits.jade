@@ -1,0 +1,95 @@
+//- index.jade
+doctype html
+
+html.no-js(lang='en')
+
+  include ./includes/head.jade
+  body
+    .pre-loader
+      .load-con
+        img.animated.fadeInDown(src='assets/img/rfw/logo.png', alt='')
+        .spinner
+          .bounce1
+          .bounce2
+          .bounce3
+    header
+      include ./includes/splashnav.jade
+      img(src="assets/img/rfw/rfw-bkgd-stripe.jpg")
+      .wrapper
+      section#screens
+        .container
+          .section-heading.scrollpoint.sp-effect3
+            h1 Your Benefits
+            .divider
+      section#features
+          .row.oddrow
+            .col-md-3.col-sm-3.col-xs-12.problem-icon-odd
+              i.fa.fa-tint.fa-4x
+              //- img(src="assets/img/rfw/icons/HardWater.png" height="128px" width="128px")
+            .col-md-9.col-sm-9.col-xs-12
+              h2 IN THE BATHROOM
+              p Your soap and shampoo will lather better, so you'll use up to 75% less! Your hair and skin will feel noticeably cleaner, softer and moistureized. Your body won't be obsorbing chemicals such as chlorine and many others during your bath or shower. Additionally, there will be no soap scum or mineral deposits to clean off sinks, showers, tub or toilets.
+      section#screens
+          .row.evenrow
+            .col-md-9.col-sm-9.col-xs-12
+              h2 IN THE KITCHEN
+              p Dishes will clean up easily and be spot-free. Plus, you will not be cleaning and cooking your food in thousands of chemicals!
+            .col-md-3.col-sm-3.col-xs-12.problem-icon-even
+              i.fa.fa-tint.fa-4x
+              //- img(src="assets/img/rfw/icons/IronStaining.png" height="128px" width="128px")
+      section#features
+          .row.oddrow
+            .col-md-3.col-sm-3.col-xs-12.problem-icon-odd
+              i.fa.fa-tint.fa-4x
+              //- img(src="assets/img/rfw/icons/Sulphur.png" height="128px" width="128px")
+            .col-md-9.col-sm-9.col-xs-12
+              h2 IN THE LAUNDRY
+              p Clothes will be softer, cleaner, whiter and brighter, and last longer. Using soft water and pure soap products increases the life of clothing, towels and linens up to 33%. Without hard water service issues, washing machines will last longer, too.contain the chemical hydrogen sulfide gas, which will fill your home with a "rotten egg" smell.  Water treatment is the only solution to address sulfur.
+      section#screens
+          .row.evenrow
+            .col-md-9.col-sm-9.col-xs-12
+              h2 PLUMBING AND APPLIANCES
+              p Appliances that use soft water will last longer and run better. Why? Because water heaters, washing machines and dishwashers using hard water can wear out 30% faster.
+            .col-md-3.col-sm-3.col-xs-12.problem-icon-even
+              i.fa.fa-tint.fa-4x
+              //- img(src="assets/img/rfw/icons/TastesOdors.png" height="128px" width="128px")
+      //- section#features
+      //-     .row.oddrow
+      //-       .col-md-3.col-sm-3.col-xs-12.problem-icon-odd
+      //-         i.fa.fa-tint.fa-4x
+      //-         //- img(src="assets/img/rfw/icons/")
+      //-       .col-md-9.col-sm-9.col-xs-12
+      //-         h2 Problem Title
+      //-         p Locavore bicycle rights hoodie kickstarter, asymmetrical photo booth literally VHS kombucha keffiyeh slow-carb. Helvetica pinterest blog, meditation poutine truffaut seitan before they sold out. Slow-carb chartreuse heirloom chia migas man braid. Keytar quinoa synth, tilde organic drinking vinegar meggings.
+      include ./includes/gettested.jade
+      include ./includes/contact.jade
+      include ./includes/footer.jade
+
+script(src='assets/js/jquery-1.11.1.min.js')
+    script(src='assets/js/bootstrap.min.js')
+    script(src='assets/js/slick.min.js')
+    script(src='assets/js/placeholdem.min.js')
+    script(src='assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js')
+    script(src='assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js')
+    script(src='assets/js/waypoints.min.js')
+    script(src='assets/js/scripts.js')
+    script.
+      $(document).ready(function() {
+      appMaster.preLoader();
+      });
+    // ScheduleOnce widget code begins here
+    script(src='assets/js/scheduleonce.js')
+    script(src='assets/js/scheduleonce1.js')
+
+    //
+      Below is the Google Universal Analytics tracking code for this site.
+      To get all the benefits of Universal Analytics for this property, copy and paste this code into every webpage you want to track.
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-82637054-1', 'auto');
+      ga('send', 'pageview');
+    // Ends Google Analytics Tracking code
+

@@ -1,0 +1,36 @@
+//- footer.jade
+footer#footer
+      .container-fluid
+        .row
+          .col-xs-6.col-sm-3.column.footer-menu
+            h4 Information
+            ul.list-unstyled
+              li
+                a(href='/products.html') Products
+          .col-xs-6.col-sm-3.column.footer-menu
+            h4 About
+            ul.list-unstyled
+              li
+                a(href='/index.html#contact') Contact Us
+          .col-xs-12.col-sm-3.column.footer-menu
+            h4 Stay Posted
+            form#footer-form(action='dbcall.php', method='POST', role='form')
+            .form-group
+              input#gimme-email.form-control(type='text', title='No spam, we promise!', placeholder='Tell us your email', name='email_address')
+
+            .form-group
+              button#insert.btn.btn-primary(type='submit', data-toggle='modal', data-target='#alertModal') Subscribe for Updates
+
+          #result
+          .col-xs-12.col-sm-3.text-right
+            h4 Follow
+            ul.list-inline
+              li
+                a.scrollpoint.sp-effect3(href='http://www.twitter.com/MiddleTNWater', target='_tab')
+                  i.fa.fa-twitter.fa-4x
+              li
+                a.scrollpoint.sp-effect3(href='http://www.pinterest.com/whatsinyourH2O', target='_tab')
+                  i.fa.fa-pinterest.fa-4x
+              li
+                a.scrollpoint.sp-effect3(href='http://www.facebook.com/robertsonfamilywater', target='_tab')
+                  i.fa.fa-facebook.fa-4x

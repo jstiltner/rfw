@@ -1,0 +1,81 @@
+//- index.jade
+doctype html
+
+html.no-js(lang='en')
+
+  include ./includes/head.jade
+  body
+    .pre-loader
+      .load-con
+        img.animated.fadeInDown(src='assets/img/rfw/logo.png', alt='')
+        .spinner
+          .bounce1
+          .bounce2
+          .bounce3
+    header
+      include ./includes/splashnav.jade
+      img(src="assets/img/rfw/rfw-bkgd-stripe.jpg")
+      .wrapper
+      section#features-white
+        .container
+          .section-heading.scrollpoint.sp-effect3#features
+            h1 Residential Water Solutions
+            .divider
+            p Drink better water
+          .row.oddrow
+            .col-md-3.col-sm-3.col-xs-12.problem-icon-odd
+              img(src="assets/img/rfw/Vesta_Images/Vesta_Softener.jpg" width=100 height=200)
+            .col-md-9.col-sm-9.col-xs-12
+              h2 VESTA RESIDENTIAL SERIES WATER SOFTENERS
+              p Each Vesta Water Conditioner is designed to specifically address the water quality issues that are unique to your home providing your family with outstanding water. Your investment will reward you with quality water at every faucet in your home.
+          .row.even-row-product
+            .col-md-9.col-sm-9.col-xs-12
+              h2 VESTA RESIDENTIAL TWIN TANK SERIES WATER SOFTENERS
+              p The Vesta Twin Control Valve is one of the most advanced controls available giving you soft water 24 hours a day, 7 days a week 365 days a year.
+            .col-md-3.col-sm-3.col-xs-12.problem-icon-even
+              img(src="assets/img/rfw/Vesta_Images/Vesta_Twin.jpg" width=100 height=200)
+          .row.oddrow
+            .col-md-3.col-sm-3.col-xs-12.problem-icon-odd
+              img(src="assets/img/rfw/big-blue-filter.jpg" width=100 height=200)
+            .col-md-9.col-sm-9.col-xs-12
+              h2 BIG BLUE WHOLE HOUSE ACTIVATED CARBON FILTRATION SYSTEM
+              p Remove harmful chemicals from every faucet in your home.
+          .row.even-row-product
+            .col-md-9.col-sm-9.col-xs-12
+              h2 VESTA DRINKING WATER SYSTEM
+              p Reverse Osmosis Drinking Water Systems provide better than bottled quality water right at your tap.
+            .col-md-3.col-sm-3.col-xs-12.problem-icon-even
+              img(src="assets/img/rfw/Vesta_Images/ROproduct.jpg" width=216 height=144)
+
+      include ./includes/gettested.jade
+      include ./includes/contact.jade
+      include ./includes/footer.jade
+
+script(src='assets/js/jquery-1.11.1.min.js')
+    script(src='assets/js/bootstrap.min.js')
+    script(src='assets/js/slick.min.js')
+    script(src='assets/js/placeholdem.min.js')
+    script(src='assets/js/rs-plugin/js/jquery.themepunch.plugins.min.js')
+    script(src='assets/js/rs-plugin/js/jquery.themepunch.revolution.min.js')
+    script(src='assets/js/waypoints.min.js')
+    script(src='assets/js/scripts.js')
+    script.
+      $(document).ready(function() {
+      appMaster.preLoader();
+      });
+    // ScheduleOnce widget code begins here
+    script(src='assets/js/scheduleonce.js')
+    script(src='assets/js/scheduleonce1.js')
+
+    //
+      Below is the Google Universal Analytics tracking code for this site.
+      To get all the benefits of Universal Analytics for this property, copy and paste this code into every webpage you want to track.
+    script.
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-82637054-1', 'auto');
+      ga('send', 'pageview');
+    // Ends Google Analytics Tracking code
+
