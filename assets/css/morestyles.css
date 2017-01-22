@@ -1,0 +1,99 @@
+.color1{
+color: #66cdcc;
+text-align: center;
+}
+
+.color2{
+  color: #336799;
+  text-align: center;
+}
+
+.centered{
+  text-align: center;
+}
+
+.justified
+{
+  text-align: justify;
+}
+
+.feature{
+  padding-bottom: 80px;
+}
+
+#footer{
+  padding: 15px;
+  color: #FAFAFA;
+}
+
+.footer-menu{
+  text-align: justify;
+}
+
+h1{
+  text-shadow: 0 0 1px black;
+}
+
+
+
+#footer h4{
+  color: #DCDCE9;
+  text-shadow: 0 0 4px black;
+}
+
+#footer a {
+  color: #FAFAFA;
+  text-align: left;
+}
+
+
+.text-right{
+  text-align: right;
+}
+
+.oddrow{
+line-height: 1.7em;
+padding: 3em 14em 0em 1em;
+text-align: justify;
+}
+
+.evenrow{
+background-color: #ffffff;
+line-height: 1.7em;
+padding: 4em 1em 1em 14em;
+text-align: justify;
+width: 100%;
+
+}
+
+.evenrow h2{
+text-align: right;
+}
+
+.problem-icon-odd{
+text-align: right;
+}
+
+.problem-icon-odd img{
+border-style: none;
+  border-radius: 4px;
+}
+
+.problem-icon-even img{
+border-style: none;
+  border-radius: 4px;
+}
+
+.problem-icon-even{
+text-align: left;
+}
+
+.even-row-product{
+line-height: 1.7em;
+padding: 4em 1em 1em 14em;
+text-align: justify;
+}
+
+.tweakedlogo{
+  border-radius: 3px;
+}
